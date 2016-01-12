@@ -7,6 +7,7 @@
 //
 
 #import "AFNetworking.h"
+#import "FMDB.h"
 
 
 static NSString *SERVER_BASE_URL = @"http://oc.osell.com/Service/";
