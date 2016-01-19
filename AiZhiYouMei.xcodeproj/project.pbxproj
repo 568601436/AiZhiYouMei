@@ -12,6 +12,8 @@
 		671C46671C3B68FB00A2B88D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671C46651C3B68FB00A2B88D /* Main.storyboard */; };
 		671C466C1C3B68FB00A2B88D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671C466B1C3B68FB00A2B88D /* Assets.xcassets */; };
 		671C466F1C3B68FB00A2B88D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671C466D1C3B68FB00A2B88D /* LaunchScreen.storyboard */; };
+		6750044E1C4E0C6B00466D36 /* UIImageView+ImageViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6750044D1C4E0C6B00466D36 /* UIImageView+ImageViewExtension.m */; };
+		675004521C4E0D4900466D36 /* CGFileHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 675004511C4E0D4900466D36 /* CGFileHelp.m */; };
 		6773FF6D1C44CB4B00B4DC96 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6773FF6C1C44CB4B00B4DC96 /* BaseVC.m */; };
 		6773FF701C44CB6400B4DC96 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6773FF6F1C44CB6400B4DC96 /* HomeVC.m */; };
 		67BB6CDD1C3CDD4100FF760D /* RequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BB6CDC1C3CDD4100FF760D /* RequestHelper.m */; };
@@ -29,6 +31,10 @@
 		671C466B1C3B68FB00A2B88D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		671C466E1C3B68FB00A2B88D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		671C46701C3B68FB00A2B88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6750044C1C4E0C6B00466D36 /* UIImageView+ImageViewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ImageViewExtension.h"; sourceTree = "<group>"; };
+		6750044D1C4E0C6B00466D36 /* UIImageView+ImageViewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ImageViewExtension.m"; sourceTree = "<group>"; };
+		675004501C4E0D4900466D36 /* CGFileHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGFileHelp.h; sourceTree = "<group>"; };
+		675004511C4E0D4900466D36 /* CGFileHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGFileHelp.m; sourceTree = "<group>"; };
 		6773FF6B1C44CB4B00B4DC96 /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
 		6773FF6C1C44CB4B00B4DC96 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		6773FF6E1C44CB6400B4DC96 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
@@ -84,6 +90,8 @@
 		671C465B1C3B68FB00A2B88D /* AiZhiYouMei */ = {
 			isa = PBXGroup;
 			children = (
+				6750044F1C4E0D1B00466D36 /* ClassHelper */,
+				6750044B1C4E0C5200466D36 /* Extensions */,
 				679F2D4E1C3B7273002B5D9F /* Config */,
 				679F2D4F1C3B7273002B5D9F /* Model */,
 				679F2D501C3B7273002B5D9F /* Request */,
@@ -109,6 +117,24 @@
 				671C465D1C3B68FB00A2B88D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6750044B1C4E0C5200466D36 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6750044C1C4E0C6B00466D36 /* UIImageView+ImageViewExtension.h */,
+				6750044D1C4E0C6B00466D36 /* UIImageView+ImageViewExtension.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6750044F1C4E0D1B00466D36 /* ClassHelper */ = {
+			isa = PBXGroup;
+			children = (
+				675004501C4E0D4900466D36 /* CGFileHelp.h */,
+				675004511C4E0D4900466D36 /* CGFileHelp.m */,
+			);
+			path = ClassHelper;
 			sourceTree = "<group>";
 		};
 		6773FF6A1C44C95D00B4DC96 /* Homes */ = {
@@ -300,6 +326,8 @@
 			files = (
 				67BB6CE01C3CEC0700FF760D /* ApiResult.m in Sources */,
 				67BB6CDD1C3CDD4100FF760D /* RequestHelper.m in Sources */,
+				675004521C4E0D4900466D36 /* CGFileHelp.m in Sources */,
+				6750044E1C4E0C6B00466D36 /* UIImageView+ImageViewExtension.m in Sources */,
 				671C46611C3B68FB00A2B88D /* AppDelegate.m in Sources */,
 				6773FF701C44CB6400B4DC96 /* HomeVC.m in Sources */,
 				6773FF6D1C44CB4B00B4DC96 /* BaseVC.m in Sources */,

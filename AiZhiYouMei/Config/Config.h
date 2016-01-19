@@ -9,5 +9,7 @@
 #import "AFNetworking.h"
 #import "FMDB.h"
 
+static NSString *IMAGE_CACHE_PATH = @"/Library/Caches/Images/";
+static NSString *VOICE_CACHE_PATH = @"/Library/Caches/Voices/";
 
 static NSString *SERVER_BASE_URL = @"http://oc.osell.com/Service/";

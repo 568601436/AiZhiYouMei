@@ -17,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self initFilePath];
     return YES;
 }
 
@@ -41,9 +42,39 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
-    [self saveContext];
 }
 
-
+- (void)initFilePath{
+    NSArray *cachepaths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    if (cachepaths && cachepaths.count > 0)
+    {
+        NSFileManager *manager = [NSFileManager defaultManager];
+        NSError *error = nil;
+        
+        NSString *imagepath = [NSHomeDirectory() stringByAppendingString: IMAGE_CACHE_PATH];
+        
+        BOOL exists = [manager fileExistsAtPath: imagepath];
+        
+        if (!exists)
+        {
+            if (![manager createDirectoryAtPath: imagepath withIntermediateDirectories: YES attributes: nil error: &error])
+            {
+                //                NSLog(@"%@", [error localizedDescription]);
+            }
+        }
+        
+        NSString *voicepath = [NSHomeDirectory() stringByAppendingString: VOICE_CACHE_PATH];
+        
+        exists = [manager fileExistsAtPath: voicepath];
+        
+        if (!exists)
+        {
+            if (![manager createDirectoryAtPath: voicepath withIntermediateDirectories: YES attributes: nil error: &error])
+            {
+                //                NSLog(@"%@", [error localizedDescription]);
+            }
+        }
+    }
+}
 
 @end
