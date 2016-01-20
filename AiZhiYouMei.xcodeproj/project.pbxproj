@@ -69,6 +69,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		671BF3B51C4F693500076AB8 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		671BF3B61C4F693500076AB8 /* ShoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShoppingCart;
+			sourceTree = "<group>";
+		};
+		671BF3B71C4F693500076AB8 /* Shops */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shops;
+			sourceTree = "<group>";
+		};
+		671BF3B81C4F693500076AB8 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		671C46501C3B68FB00A2B88D = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +224,10 @@
 		679F2D541C3B7273002B5D9F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				671BF3B51C4F693500076AB8 /* Me */,
+				671BF3B61C4F693500076AB8 /* ShoppingCart */,
+				671BF3B71C4F693500076AB8 /* Shops */,
+				671BF3B81C4F693500076AB8 /* Store */,
 				6773FF6A1C44C95D00B4DC96 /* Homes */,
 				6773FF6B1C44CB4B00B4DC96 /* BaseVC.h */,
 				6773FF6C1C44CB4B00B4DC96 /* BaseVC.m */,
