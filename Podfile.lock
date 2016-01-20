@@ -19,13 +19,16 @@ PODS:
   - FMDB/common (2.5)
   - FMDB/standard (2.5):
     - FMDB/common
+  - MJRefresh (3.0.8)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0.4)
   - FMDB (~> 2.5)
+  - MJRefresh (~> 3.0.8)
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  MJRefresh: fafde8f18f4afd66b434331a9beb67a6c0264056
 
 COCOAPODS: 0.37.2
