@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		671BF3BB1C4F787200076AB8 /* NSString+StringExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 671BF3BA1C4F787200076AB8 /* NSString+StringExtension.m */; };
 		671C465E1C3B68FB00A2B88D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 671C465D1C3B68FB00A2B88D /* main.m */; };
 		671C46611C3B68FB00A2B88D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 671C46601C3B68FB00A2B88D /* AppDelegate.m */; };
 		671C46671C3B68FB00A2B88D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671C46651C3B68FB00A2B88D /* Main.storyboard */; };
@@ -23,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		4ABFCF3216E7A199FB609D99 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		671BF3B91C4F787200076AB8 /* NSString+StringExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringExtension.h"; sourceTree = "<group>"; };
+		671BF3BA1C4F787200076AB8 /* NSString+StringExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringExtension.m"; sourceTree = "<group>"; };
 		671C46591C3B68FB00A2B88D /* AiZhiYouMei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiZhiYouMei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		671C465D1C3B68FB00A2B88D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		671C465F1C3B68FB00A2B88D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 		6750044B1C4E0C5200466D36 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				671BF3B91C4F787200076AB8 /* NSString+StringExtension.h */,
+				671BF3BA1C4F787200076AB8 /* NSString+StringExtension.m */,
 				6750044C1C4E0C6B00466D36 /* UIImageView+ImageViewExtension.h */,
 				6750044D1C4E0C6B00466D36 /* UIImageView+ImageViewExtension.m */,
 			);
@@ -357,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67BB6CE01C3CEC0700FF760D /* ApiResult.m in Sources */,
+				671BF3BB1C4F787200076AB8 /* NSString+StringExtension.m in Sources */,
 				67BB6CDD1C3CDD4100FF760D /* RequestHelper.m in Sources */,
 				675004521C4E0D4900466D36 /* CGFileHelp.m in Sources */,
 				6750044E1C4E0C6B00466D36 /* UIImageView+ImageViewExtension.m in Sources */,
